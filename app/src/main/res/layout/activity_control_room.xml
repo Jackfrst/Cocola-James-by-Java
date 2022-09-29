@@ -243,6 +243,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:id="@+id/james_book_option_btn"
                         android:background="@drawable/edit_text_back"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
@@ -251,6 +255,9 @@
 
                     </LinearLayout>
                     <LinearLayout
+                        android:orientation="vertical"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
                         android:background="@drawable/edit_text_back"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
@@ -321,39 +328,105 @@
 
                 </LinearLayout>
         </RelativeLayout>
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/control_room_store"
-        android:visibility="gone"
-        android:padding="25dp"
-        android:background="@color/colorPrimary"
-        android:layout_margin="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/control_room_store"
+            android:visibility="gone"
+            android:padding="25dp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit_text_back"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"/>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit_text_back"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"/>
+                <LinearLayout
+                    android:background="@drawable/edit_text_back"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/james_book_option"
+            android:layout_margin="25dp"
             android:weightSum="3"
-            android:orientation="horizontal"
+            android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_marginRight="10dp"
-                android:background="@drawable/edit_text_back"
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#0B151E"
+                android:padding="10dp"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="200dp"/>
-            <LinearLayout
-                android:layout_marginRight="10dp"
-                android:background="@drawable/edit_text_back"
+                android:layout_height="200dp">
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:text="Beginners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#1B224C"
+                android:padding="10dp"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="200dp"/>
-            <LinearLayout
-                android:background="@drawable/edit_text_back"
+                android:layout_height="200dp">
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:text="Intermediate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:background="#249093"
+                android:padding="10dp"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="200dp"/>
+                android:layout_height="200dp">
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:text="Advanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
+
 
 </RelativeLayout>

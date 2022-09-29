@@ -19,7 +19,10 @@ import com.s21tasks.app.R;
 public class ControlRoomActivity extends AppCompatActivity {
     private Button storeBtn ;
     private LinearLayout storeLayout ;
-    private boolean isStoreLayoutOn = false ;
+    private boolean isStoreLayoutOn = false , isJamesBookOptionOn = false ;
+    private LinearLayout jamesBookOptionLayout ;
+    private LinearLayout jamesBookOptionBtn ;
+    private RelativeLayout controlRoomLayout ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().hide();
@@ -28,11 +31,43 @@ public class ControlRoomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_control_room);
         storeBtn = findViewById(R.id.control_room_store_btn);
         storeLayout = findViewById(R.id.control_room_store);
+        jamesBookOptionLayout = findViewById(R.id.james_book_option);
+        jamesBookOptionBtn = findViewById(R.id.james_book_option_btn);
+        controlRoomLayout = findViewById(R.id.control_room_layout);
+        controlRoomLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                YoYo.with(Techniques.FadeOut)
+                        .duration(500).withListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+
+                    }
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        jamesBookOptionLayout.setVisibility(View.GONE);
+                        storeLayout.setVisibility(View.GONE);
+                    }
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                })
+                        .repeat(0)
+                        .playOn(findViewById(R.id.james_book_option));
+
+            }
+        });
         storeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 YoYo.with(Techniques.SlideInLeft)
-                        .duration(1500).withListener(new Animator.AnimatorListener() {
+                        .duration(500).withListener(new Animator.AnimatorListener() {
                     @Override
                     public void onAnimationStart(Animator animator) {
                         storeLayout.setVisibility(View.VISIBLE);
@@ -56,23 +91,48 @@ public class ControlRoomActivity extends AppCompatActivity {
                         .playOn(findViewById(R.id.control_room_store));
             }
         });
+        jamesBookOptionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                YoYo.with(Techniques.FadeIn)
+                        .duration(500).withListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+                        jamesBookOptionLayout.setVisibility(View.VISIBLE);
+                        isJamesBookOptionOn = true;
+                    }
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
 
+                    }
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
 
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                })
+                        .repeat(0)
+                        .playOn(findViewById(R.id.james_book_option));
+            }
+        });
     }
 
     @Override
     public void onBackPressed() {
         if (isStoreLayoutOn){
             YoYo.with(Techniques.SlideOutRight)
-                    .duration(1500).withListener(new Animator.AnimatorListener() {
+                    .duration(500).withListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
-                    storeLayout.setVisibility(View.VISIBLE);
                     isStoreLayoutOn = false;
                 }
                 @Override
                 public void onAnimationEnd(Animator animator) {
-
+                    storeLayout.setVisibility(View.GONE);
                 }
                 @Override
                 public void onAnimationCancel(Animator animator) {
@@ -86,6 +146,30 @@ public class ControlRoomActivity extends AppCompatActivity {
             })
                     .repeat(0)
                     .playOn(findViewById(R.id.control_room_store));
+        }
+        if (isJamesBookOptionOn){
+            YoYo.with(Techniques.FadeOut)
+                    .duration(500).withListener(new Animator.AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animator) {
+                    isJamesBookOptionOn = false;
+                }
+                @Override
+                public void onAnimationEnd(Animator animator) {
+                    jamesBookOptionLayout.setVisibility(View.GONE);
+                }
+                @Override
+                public void onAnimationCancel(Animator animator) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animator) {
+
+                }
+            })
+                    .repeat(0)
+                    .playOn(findViewById(R.id.james_book_option));
         }
     }
 }
