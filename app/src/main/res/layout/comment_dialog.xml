@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#F6F6F6"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/dialog_title_layout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/dialog_title_view"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:background="@color/zebra_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/dialog_title_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/comment_dialog_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Solving Status : "
+                android:textAllCaps="true"
+                android:id="@+id/comment_dialog_status"
+                android:textSize="@dimen/regular_text_size"
+                android:textColor="@color/black_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Feedback Date : "
+                android:id="@+id/comment_dialog_date_time"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="Service Quality : "
+        android:id="@+id/comment_service_quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="User Feedback : "
+        android:layout_marginTop="5dp"
+        android:id="@+id/comment_dialog_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</RelativeLayout>

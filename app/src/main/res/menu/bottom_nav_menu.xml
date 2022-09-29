@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="HOME" />
+
+<!--    <item-->
+<!--        android:id="@+id/menu_dncc"-->
+<!--        android:icon="@drawable/ic_baseline_apartment_24"-->
+<!--        android:title="DNCC" />-->
+
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="HISTORY" />
+    <item
+        android:id="@+id/menu_other"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="OTHERS" />
+
+</menu>

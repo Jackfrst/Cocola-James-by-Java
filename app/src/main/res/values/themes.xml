@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DNCC" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/gray_text_color</item>
+    </style>
+
+    <style name="Theme.DNCC.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DNCC.SearchView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/black_text_color</item>
+    </style>
+
+    <style name="Theme.DNCC.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DNCC.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.DNCC.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/Theme.DNCC.TextInputLayout.HintText</item>
+        <item name="hintTextColor">@color/gray_text_color</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/gray_text_color</item>
+        <item name="android:textColorHint">@color/gray_text_color</item>
+    </style>
+    <style name="Theme.DNCC.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/gray_text_color</item>
+    </style>
+</resources>
