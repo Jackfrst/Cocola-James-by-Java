@@ -7,18 +7,12 @@
     <color name="gray_text_color">#707070</color>
     <color name="white">#ffffff</color>
 
-    <color name="theme_text_color">#0D3F67</color>
-    <color name="black_text_color">#000000</color>
     <color name="red_text_color">#ff2200</color>
-
-    <color name="activity_back_color">#F2F4F6</color>
 
     //progress colors
     <color name="completed_line_color">#53B448</color>
     <color name="uncompleted_line_color">#CBCBCB</color>
     //zebra color
-    <color name="zebra_gray">#F5F5F5</color>
-    <color name="transparent_line_color">#34063664</color>
 
 
 </resources>

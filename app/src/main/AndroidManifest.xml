@@ -39,36 +39,8 @@
         <activity
             android:name="james.cocola.app.CocolaJamesActivities.ControlRoomActivity"
             android:screenOrientation="landscape" />
-        <activity
-            android:name="james.cocola.app.NotificationActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.SettingActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.ProfileActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.HistoryDetailsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.NumbersActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.IssueFormActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="james.cocola.app.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            android:theme="@style/Base.Theme.AppCompat" />
-        <activity
-            android:name="james.cocola.app.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:screenOrientation="portrait" />
+        
+
         <activity
             android:name="james.cocola.app.MainActivity"
             android:exported="true"
