@@ -5,427 +5,991 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CocolaJamesActivities.ControlRoomActivity">
+    tools:context="james.cocola.app.CocolaJamesActivities.ControlRoomActivity">
 
     <RelativeLayout
         android:background="@drawable/control_room"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <RelativeLayout
-            android:visibility="visible"
             android:id="@+id/control_room_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-                <Button
-                    android:id="@+id/control_room_store_btn"
-                    android:background="@drawable/edit_text_back"
-                    android:textColor="@color/white"
-                    android:text="Store"
-                    android:layout_margin="25dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <LinearLayout
-                    android:layout_below="@id/my_gem"
-                    android:id="@+id/leaderboard_id"
-                    android:orientation="vertical"
-                    android:padding="15dp"
-                    android:background="@drawable/edit_text_back"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="100dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="250dp"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:textStyle="bold"
-                        android:gravity="center_horizontal"
-                        android:textColor="@color/red_text_color"
-                        android:text="LeaderBoard"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:background="@color/uncompleted_line_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"/>
-                    <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/completed_line_color"
-                            android:text="Notes.mahmud"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <LinearLayout
-                            android:layout_centerVertical="true"
-                            android:orientation="horizontal"
-                            android:layout_alignParentRight="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_marginRight="5dp"
-                                android:src="@drawable/blue_gem"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/yellow_gem"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/diamond"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                        </LinearLayout>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/completed_line_color"
-                            android:text="Rifat.Amin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <LinearLayout
-                            android:layout_centerVertical="true"
-                            android:orientation="horizontal"
-                            android:layout_alignParentRight="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_marginRight="5dp"
-                                android:src="@drawable/blue_gem"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/yellow_gem"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/diamond"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                        </LinearLayout>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/completed_line_color"
-                            android:text="Arnob.Mahfuz"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <LinearLayout
-                            android:layout_centerVertical="true"
-                            android:orientation="horizontal"
-                            android:layout_alignParentRight="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_marginRight="5dp"
-                                android:src="@drawable/blue_gem"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/yellow_gem"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/diamond"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                        </LinearLayout>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/completed_line_color"
-                            android:text="Malek.Abdul"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <LinearLayout
-                            android:layout_centerVertical="true"
-                            android:orientation="horizontal"
-                            android:layout_alignParentRight="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_marginRight="5dp"
-                                android:src="@drawable/blue_gem"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/yellow_gem"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/diamond"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                        </LinearLayout>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_centerVertical="true"
-                            android:textColor="@color/completed_line_color"
-                            android:text="Shakib.Khalid"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <LinearLayout
-                            android:layout_centerVertical="true"
-                            android:orientation="horizontal"
-                            android:layout_alignParentRight="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_marginRight="5dp"
-                                android:src="@drawable/blue_gem"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/yellow_gem"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                            <ImageView
-                                android:src="@drawable/diamond"
-                                android:layout_marginRight="5dp"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"/>
-                        </LinearLayout>
-                    </RelativeLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginRight="15dp"
-                    android:gravity="center"
-                    android:padding="15dp"
-                    android:background="@drawable/edit_text_back"
-                    android:orientation="vertical"
-                    android:id="@+id/title_id"
-                    android:layout_toRightOf="@id/leaderboard_id"
-                    android:layout_marginTop="15dp"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/leaderboard_id"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/my_gem"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_back"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="LeaderBoard"
+                    android:textColor="@color/red_text_color"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/uncompleted_line_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
                     <TextView
-                        android:textColor="@color/completed_line_color"
-                        android:text="Ways Of Earning Coins"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Notes.mahmud"
+                        android:textColor="@color/completed_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/blue_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/yellow_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/diamond" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Rifat.Amin"
+                        android:textColor="@color/completed_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/blue_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/yellow_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/diamond" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Arnob.Mahfuz"
+                        android:textColor="@color/completed_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/blue_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/yellow_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/diamond" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Malek.Abdul"
+                        android:textColor="@color/completed_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/blue_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/yellow_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/diamond" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Shakib.Khalid"
+                        android:textColor="@color/completed_line_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/blue_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/yellow_gem" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/diamond" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/leaderboard_id"
+                android:background="@drawable/edit_text_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Earn More Coins Through"
+                    android:textColor="@color/red_text_color" />
+            </LinearLayout>
+            <ScrollView
+                android:layout_toRightOf="@id/leaderboard_id"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/title_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <LinearLayout
-                    android:layout_below="@id/title_id"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginBottom="100dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_toRightOf="@id/leaderboard_id"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:orientation="vertical"
-                        android:id="@+id/james_book_option_btn"
-                        android:background="@drawable/edit_text_back"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="150dp">
+                        android:id="@+id/games_coin_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
 
+                        <LinearLayout
+                            android:id="@+id/james_book_option_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_back"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/james_book_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="James Book"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/james_game_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_back"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/james_games" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="James Games"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:background="@drawable/edit_text_back"
-                        android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="150dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/games_coin_area"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/leaderboard_id"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
 
+                        <LinearLayout
+                            android:id="@+id/control_room_store_btn"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_back"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/shop_web" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="James Web Store"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_back"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/james_setting" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Control Settings"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+            </ScrollView>
+
+
+
+            <LinearLayout
+                android:id="@+id/my_gem"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_back"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3">
+
                 <LinearLayout
-                    android:gravity="center_vertical"
-                    android:id="@+id/my_gem"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="@drawable/edit_text_back"
-                    android:weightSum="3"
-                    android:layout_margin="15dp"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/blue_gem"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"/>
-                        <TextView
-                            android:textColor="@color/colorAccent"
-                            android:textSize="18sp"
-                            android:text=" X 5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/yellow_gem"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"/>
-                        <TextView
-                            android:textColor="@color/completed_line_color"
-                            android:textSize="18sp"
-                            android:text=" X 10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:src="@drawable/diamond"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"/>
-                        <TextView
-                            android:textColor="@color/red_text_color"
-                            android:textSize="18sp"
-                            android:text=" X 2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/blue_gem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" X 5"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/yellow_gem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" X 10"
+                        android:textColor="@color/completed_line_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/diamond" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" X 2"
+                        android:textColor="@color/red_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
         </RelativeLayout>
-        <LinearLayout
-            android:id="@+id/control_room_store"
+        <ScrollView
             android:visibility="gone"
-            android:padding="25dp"
-            android:background="@color/colorPrimary"
-            android:layout_margin="25dp"
+            android:id="@+id/control_room_store"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
-                android:weightSum="3"
-                android:orientation="horizontal"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/dialog_blur_back"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
                 <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_1"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Space Pillow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_2"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Blue Space Bag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_3"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Ball"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_4"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Water Bottle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/edit_text_back"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"/>
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_5"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Baby Telescope"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_6"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Suite Ring"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_7"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Galaxy Book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_8"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Children Space Book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
                 <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/edit_text_back"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"/>
-                <LinearLayout
-                    android:background="@drawable/edit_text_back"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"/>
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_9"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Trip Book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_10"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Travel Book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_11"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Badge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_back"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/shop_12"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:layout_gravity="center_horizontal"
+                            android:textAllCaps="true"
+                            android:textColor="#1B224C"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"                            android:text="Space Cap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
+        </ScrollView>
+        <RelativeLayout
+            android:clickable="true"
             android:visibility="gone"
             android:id="@+id/james_book_option"
-            android:layout_margin="25dp"
-            android:weightSum="3"
-            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_blur_back"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="#0B151E"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="200dp">
-                <TextView
-                    android:textSize="16sp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    android:textColor="@color/white"
-                    android:textAllCaps="true"
-                    android:text="Beginners"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="#1B224C"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="200dp">
-                <TextView
-                    android:textSize="16sp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    android:textColor="@color/white"
-                    android:textAllCaps="true"
-                    android:text="Intermediate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:background="#249093"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="200dp">
-                <TextView
-                    android:textSize="16sp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignParentBottom="true"
-                    android:textColor="@color/white"
-                    android:textAllCaps="true"
-                    android:text="Advanced"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
-        </LinearLayout>
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="25dp"
+                android:weightSum="3"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/beginners_document_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/beg_optn_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/about_telescope" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/intermediate_document_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/int_optn_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/telescope_func" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/advance_document_btn"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/adv_optn_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:src="@drawable/telescope_collab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/james_games_option_layout"
+            android:background="@drawable/dialog_blur_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="25dp"
+                android:weightSum="3"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/beg_optn_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/game_easy" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/int_game_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/quiz_new" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@drawable/adv_optn_back"
+                    android:padding="25dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:src="@drawable/game_puzzle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
     </RelativeLayout>
 
 

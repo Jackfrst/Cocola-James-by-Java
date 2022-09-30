@@ -8,7 +8,7 @@
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingActivity">
+    tools:context="james.cocola.app.SettingActivity">
 
     <LinearLayout
         android:id="@+id/setting_update_password"

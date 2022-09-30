@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.s21tasks.app">
+    package="com.cocola.app">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -30,27 +30,35 @@
         android:theme="@style/Theme.DNCC">
         <activity
             android:screenOrientation="landscape"
-            android:name=".CocolaJamesActivities.ControlRoomActivity"/>
+            android:name="james.cocola.app.CocolaJamesActivities.WebViewActivity"/>
         <activity
-            android:name=".NotificationActivity"
+            android:screenOrientation="landscape"
+            android:name="james.cocola.app.CocolaJamesActivities.DocumentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="james.cocola.app.CocolaJamesActivities.ControlRoomActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="james.cocola.app.NotificationActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SettingActivity"
+            android:name="james.cocola.app.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="james.cocola.app.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HistoryDetailsActivity"
+            android:name="james.cocola.app.HistoryDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".NumbersActivity"
+            android:name="james.cocola.app.NumbersActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".IssueFormActivity"
+            android:name="james.cocola.app.IssueFormActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name="james.cocola.app.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
@@ -58,11 +66,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".HomeActivity"
+            android:name="james.cocola.app.HomeActivity"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="james.cocola.app.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>

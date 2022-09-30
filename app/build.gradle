@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.s21tasks.app"
+        applicationId "com.cocola.app"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

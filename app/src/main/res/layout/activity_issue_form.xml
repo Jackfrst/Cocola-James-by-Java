@@ -6,7 +6,7 @@
     android:background="#F6F6F6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IssueFormActivity">
+    tools:context="james.cocola.app.IssueFormActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

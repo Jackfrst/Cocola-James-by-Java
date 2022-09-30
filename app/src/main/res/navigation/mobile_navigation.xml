@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.s21tasks.app.ui.home.HomeFragment"
+        android:name="james.cocola.app.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,12 +19,12 @@
 
     <fragment
         android:id="@+id/menu_history"
-        android:name="com.s21tasks.app.ui.notifications.NotificationsFragment"
+        android:name="james.cocola.app.ui.notifications.NotificationsFragment"
         android:label="History"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/menu_other"
-        android:name="com.s21tasks.app.ui.OthersFragment"
+        android:name="james.cocola.app.ui.OthersFragment"
         android:label="Others"
         tools:layout="@layout/fragment_other" />
 </navigation>
