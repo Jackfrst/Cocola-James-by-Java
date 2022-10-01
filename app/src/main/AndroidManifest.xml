@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cocola.app">
+    package="com.cocola.app" >
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -27,24 +27,25 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@drawable/ic_baseline_privacy_tip_24"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DNCC">
+        android:theme="@style/Theme.DNCC" >
         <activity
             android:screenOrientation="landscape"
-            android:name="james.cocola.app.CocolaJamesActivities.WebViewActivity"/>
-        <activity
-            android:screenOrientation="landscape"
-            android:name="james.cocola.app.CocolaJamesActivities.DocumentActivity"
+            android:name="james.cocola.app.CocolaJamesActivities.YesNoGamesActivity"
             android:exported="false" />
-
+        <activity
+            android:name="james.cocola.app.CocolaJamesActivities.WebViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="james.cocola.app.CocolaJamesActivities.DocumentActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name="james.cocola.app.CocolaJamesActivities.ControlRoomActivity"
             android:screenOrientation="landscape" />
-        
-
         <activity
             android:name="james.cocola.app.MainActivity"
             android:exported="true"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

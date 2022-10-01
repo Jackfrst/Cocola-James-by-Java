@@ -939,12 +939,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_margin="25dp"
                 android:weightSum="3"
                 android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <RelativeLayout
+                    android:id="@+id/game_activity_layout"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
                     android:background="@drawable/beg_optn_back"

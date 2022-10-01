@@ -26,6 +26,7 @@ public class ControlRoomActivity extends AppCompatActivity {
     //game option
     private RelativeLayout gameOptnLayout ;
     private LinearLayout jamesGameBtn ;
+    private RelativeLayout gameActivityOptn;
 
     //relative layout
     private RelativeLayout begDocBtn , intDocBtn , advDocBtn ;
@@ -40,6 +41,14 @@ public class ControlRoomActivity extends AppCompatActivity {
         jamesBookOptionLayout = findViewById(R.id.james_book_option);
         jamesBookOptionBtn = findViewById(R.id.james_book_option_btn);
         controlRoomLayout = findViewById(R.id.control_room_layout);
+        gameActivityOptn = findViewById(R.id.game_activity_layout);
+        gameActivityOptn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ControlRoomActivity.this,YesNoGamesActivity.class);
+                startActivity(i);
+            }
+        });
         controlRoomLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
